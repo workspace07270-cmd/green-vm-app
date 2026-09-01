@@ -24,3 +24,7 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+// build.gradle에 빌드 결과 파일 이름 고정
+tasks.named('bootJar') {
+    archiveFileName = 'app.jar'
+}
